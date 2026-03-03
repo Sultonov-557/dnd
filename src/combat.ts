@@ -15,6 +15,6 @@ export class Combat {
 
   tick() {
     const entity = this.entities[this.turn];
-    const choise = entity?.player.;
+    const choise = entity?.player?.choose({ entities: this.entities }) || null;
   }
 }

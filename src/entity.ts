@@ -12,10 +12,6 @@ interface Stats {
   charisma: number;
 }
 
-interface Info {
-  entities: Entity[];
-}
-
 export class Entity {
   public health: number;
   public player?: Player = new Player(this);
@@ -39,6 +35,4 @@ export class Entity {
       this.health = this.stats.healthPoints;
     }
   }
-
-  choose(info: Info) {}
 }

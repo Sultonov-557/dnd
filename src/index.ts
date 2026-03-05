@@ -1,6 +1,7 @@
-import { Dice } from "./dice.ts";
+import { Combat } from "./combat.ts";
+import { Entity } from "./entity.ts";
 
-const dice = new Dice();
+const player1 = new Entity("john");
+const player2 = new Entity("latte");
 
-console.log(dice.roll("1d20"));
-
+const combat = new Combat([player1, player2]);
